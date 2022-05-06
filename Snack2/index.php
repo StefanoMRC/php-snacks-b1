@@ -23,9 +23,9 @@
 </html>
 
 <?php
-    $nome=$_GET['nome'];
-    $mail=$_GET['email'];
-    $eta=$_GET['eta'];
+    $nome=(!empty ($_GET['nome']))? $_GET['nome']:'';
+    $mail=(!empty ($_GET['mail']))? $_GET['mail']:'';
+    $eta=(!empty ($_GET['eta']))? $_GET['eta']:'';
     echo "<p>" .'il nome è '  ."$nome". "</p>";
     echo "<p>" .'la mail è ' ."$mail". "</p>";
     echo "<p>" .'l età è '. "$eta "."</p>";
