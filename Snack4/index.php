@@ -31,11 +31,9 @@ $alunni=[
     for ($i=0; $i < count($alunni); $i++) { 
         echo $alunni[$i]['nome'].$alunni[$i]['cognome'];
         
-        echo "<p>"."Media Voti".(array_sum($alunni[$i]['voti'])/4)."</p>";
+        echo "<p>"."Media Voti".(array_sum($alunni[$i]['voti'])/5)."</p>";
         
     }
-    // for ($i=0; $i < count($array2); $i++) { 
-    //     echo $array2[$i];
-    // }
+    
      
 ?>
